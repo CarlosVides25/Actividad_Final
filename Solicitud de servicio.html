@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit this template
+-->
+<html>
+    <head>
+        <title>Solicitud de Servicio</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+         <style>
+           html {height: 100%;}
+           body {background-image: linear-gradient(#FFFFFF, rgb(12,183,242));}
+        </style>
+        <h1 align="center"><font face="Arial">Solicitud de Servicio<font><img src="Iconos/857418.png" width="70"></h1>
+         <form action="datos.jsp" method="get" style="font-size: 40px" align="center"> <font face="Arial">
+            
+            Nombres y Apellidos:<input type="text" style="font-size: 50px" name="nombre" required/><br>
+            Correo electronico:<input type="text" style="font-size: 50px" name="correo" required/><br>
+            Servicio que solicita:<select name="elegir_s" style="font-size: 50px" required/>
+                <option value="Personalización" style="font-size: 50px"> <font face="Arial"> Personalización <font></option>
+                <option value="Pedido Mayorista" style="font-size: 50px"> <font face="Arial"> Pedido Mayorista <font></option>
+                <option value="Devolución" style="font-size: 50px"> <font face="Arial"> Devolución <font></option>
+                    </select ><br>
+            Celular:<input type="number" style="font-size: 50px" name="cel" required/><br>
+            <input type="submit" style="font-size: 25px" name="Enviar Datos" value="Enviar Datos">
+            <input type="button" style="font-size: 25px" name="Cancelar" value="Cancelar" onClick="location.href='Pagina principal.html'">
+           <font></form>
+    </body>
+</html>
